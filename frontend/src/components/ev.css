@@ -1,0 +1,70 @@
+.chart-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 1rem auto;
+  max-width: 800px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chart-item h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.date-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.date-filter label {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.date-filter input[type="date"] {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.date-filter button {
+  background-color: #00c49f;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.date-filter button:hover {
+  background-color: #00a586;
+}
+
+.filter-info {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .chart-item {
+    padding: 1rem;
+  }
+
+  .date-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+}

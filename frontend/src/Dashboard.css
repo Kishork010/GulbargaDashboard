@@ -1,0 +1,95 @@
+.dashboard {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard h1 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1800px;
+  font-size: 12px;
+  table-layout: fixed; /* fixes the table layout to respect widths */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* show ... if text overflows */
+}
+
+/* Set max widths for each column */
+/* Adjust values as needed for best fit */
+
+th:nth-child(1), td:nth-child(1) { max-width: 60px; }   /* Sales Team */
+th:nth-child(2), td:nth-child(2) { max-width: 100px; }  /* First Name */
+th:nth-child(3), td:nth-child(3) { max-width: 100px; }  /* Last Name */
+th:nth-child(4), td:nth-child(4) { max-width: 110px; }  /* Mobile Number */
+th:nth-child(5), td:nth-child(5) { max-width: 90px; }   /* City */
+th:nth-child(6), td:nth-child(6) { max-width: 110px; }  /* Opportunity ID */
+th:nth-child(7), td:nth-child(7) { max-width: 100px; }  /* Customer Type */
+th:nth-child(8), td:nth-child(8) { max-width: 80px; }   /* PPL */
+th:nth-child(9), td:nth-child(9) { max-width: 90px; }   /* Product Line */
+th:nth-child(10), td:nth-child(10) { max-width: 80px; } /* Colour */
+th:nth-child(11), td:nth-child(11) { max-width: 80px; } /* Test Drive */
+th:nth-child(12), td:nth-child(12) { max-width: 80px; } /* Status */
+th:nth-child(13), td:nth-child(13) { max-width: 110px; }/* Source Contact */
+th:nth-child(14), td:nth-child(14) { max-width: 120px; }/* Team Leader */
+
+
+thead {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #eef;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    padding: 8px;
+  }
+  table {
+    min-width: 700px; /* even smaller on mobile */
+    font-size: 11px;
+  }
+  th, td {
+    padding: 4px 6px;
+  }
+}
+
+.tooltip {
+  animation: fadeIn 0.05s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
