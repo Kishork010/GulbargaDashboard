@@ -27,7 +27,7 @@ function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/green_form');
+      const res = await fetch('https://gulbargadashboard.onrender.com');
       const json = await res.json();
 
       const parseDate = (str) => {
